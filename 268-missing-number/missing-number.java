@@ -1,12 +1,16 @@
 class Solution {
     public int missingNumber(int[] nums) {
-        int n = nums.length;
-        int expectedsum = n*(n+1)/2; // sum of first natural number
-        int actualsum = 0;
-        for(int num : nums){
-            actualsum = actualsum + num;
-        }
-        return expectedsum - actualsum; //misssing number
+       int n = nums.length;
+       boolean[] b = new boolean[n+1];
+       for(int ele : nums){
+           b[ele] = true;
+       }
+       for(int i = 0; i<=n; i++){
+        if(b[i]==false) return i;
+       }
+       return 55;
+        
+       
         
     }
 }
