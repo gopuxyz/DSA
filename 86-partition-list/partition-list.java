@@ -21,7 +21,7 @@ class Solution {
         tempB.next = null; // last node
         a = a.next;
         b = b.next;
-        if(a==null) return b;
+        if(a==null) return b; //Important
         tempA.next = b; // list  A attached to B
         return a;
          
