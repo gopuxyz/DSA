@@ -3,9 +3,7 @@ class Solution {
         int n = nums.length;
         int maxsum = nums[0];
         int currentsum = 0;
-        if(n==1){
-            return nums[0];
-        }
+        
         for(int i = 0; i<n; i++){
         
             currentsum += nums[i];
